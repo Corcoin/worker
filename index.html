@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Worker API</title>
+</head>
+<body>
+  <h1>Worker API Running</h1>
+  <p>Your API is now live at: <b>/api/*</b></p>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("worker.js").then(() => {
+        console.log("Worker API ready");
+      });
+    }
+  </script>
+</body>
+</html>
